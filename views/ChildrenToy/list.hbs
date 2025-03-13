@@ -1,0 +1,16 @@
+<div class="card">
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+      {{#each ChildrenToy }}
+      <div class="col">
+         <div class="card">
+            <a href="/ChildrenToy/details/{{_id}}">
+               <img class="card-img-top" src="{{ image }}" alt="{{ name }}" style="height: 300px; object-fit: cover;">
+            </a>
+            <div class="card-body">
+               <h5 class="card-title">{{ name }}</h5>
+            </div>
+         </div>
+      </div>
+      {{/each}}
+   </div>
+</div>

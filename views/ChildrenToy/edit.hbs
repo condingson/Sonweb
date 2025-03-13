@@ -1,0 +1,51 @@
+<form action="/Childrentoy/edit/{{ ChildrenToy._id }}" method="post">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="text-center mb-4">Edit Children Toy</h1>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="id" name="id" value="{{ ChildrenToy.id }}">
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" value="{{ ChildrenToy.name }}">
+        </div>
+        <div class="mb-3">
+  <label for="trademark" class="form-label">TradeMark</label>
+  <input type="text" class="form-control" id="Trademark" name="Trademark" value="{{ ChildrenToy.Trademark }}">
+</div>
+
+        <div class="mb-3">
+          <label for="Price" class="form-label">Price</label>
+          <div class="input-group">
+            <span class="input-group-text">$</span>
+            <input type="number" class="form-control" id="Price" name="Price" step="0.01" value="{{ ChildrenToy.Price }}">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">Image</label>
+          <input type="url" class="form-control" id="image" name="image" value="{{ ChildrenToy.image }}">
+        </div>
+
+        <div class="mb-3">
+          <label for="Describe" class="form-label">Describe</label>
+          <input type="text" class="form-control" id="Describe" name="Describe" value="{{ ChildrenToy.Describe }}">
+        </div>
+       <div class="form-group">
+          <label for="brand" class="form-label">Toy brand:</label>
+          <select name="brand" id="brand" class="form-control">
+            {{#each brands}}
+            <option value="{{ _id }}">{{ name }}</option>
+            {{/each}}
+          </select>
+        </div>
+
+
+        <div class="d-grid">
+          <input type="submit" class="btn btn-primary btn-block" value="Edit">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
