@@ -7,9 +7,6 @@ router.get('/', async (req, res) => {
    var brands = await BrandModel.find({});
    res.render('brand/index', { brands });
 })
-
-
-
 router.get('/add', (req, res) => {
    res.render('brand/add');
 })
