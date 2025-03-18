@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //import mongoose library
 var mongoose = require('mongoose');
 //config database connection + database name
-var database = "mongodb+srv://Sonweb:HDbxxY8DJG1SyuEk@cluster01.8lkvy.mongodb.net/";
+var database = "mongodb+srv://Sonweb:hqgyGyTCMLl22sCv@cluster01.8lkvy.mongodb.net/";
 //connect to database
 mongoose.connect(database)
   .then(() => console.log("Connect to db success"))
@@ -60,4 +60,3 @@ app.use(function(err, req, res, next) {
 app.listen(process.env.PORT || 3001);
 
 module.exports = app;
-
