@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 //declare router for "student" (1)
 var ChildrenToyRouter = require('./routes/ChildrenToy');
-var brandRouter = require('./routes/brand');
+var brandRouter = require('./routes/Brand');
 var app = express();
 //import body-parser library (to get input from client)
 var bodyParser = require('body-parser');
